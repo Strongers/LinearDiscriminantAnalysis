@@ -32,6 +32,7 @@ p <- ggplot(data = miete, aes(x=LDA1, y=Y))+
                    matrix(model$means[1,], nrow=2, ncol=1), size=1.2)+
       geom_vline(xintercept = matrix(as.numeric(model$scaling), nrow = 1, ncol = 2) %*% 
                    matrix(model$means[2,], nrow=2, ncol=1), size=1.2)
+      
 p
 # Plot original data
 # Data of center
